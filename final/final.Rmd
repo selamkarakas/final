@@ -1,7 +1,7 @@
 ---
-title: "Çalışmanızın Başlığı"
+title: "TÜRKİYE’DE E-TİCARET VE ÇEVRİMİÇİ ALIŞVERİŞ YÖNELİMLERİ"
 author: 
-  - İsim Soyisim[^1]
+  - Selam Karakaş[^1]
 bibliography: ../bibliography/biblio.bib
 csl: ../csl/apa-tr.csl
 header-includes:
@@ -34,7 +34,7 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== NOTLAR ================================= -->
 <!-- ======================================================================= -->
-[^1]: Öğrenci Numarası, [Github Repo](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ)
+[^1]: 17080217, [Github Repo](https://github.com/selamkarakas/final)
 
 # Final Hakkında Önemli Bilgiler
 
@@ -47,27 +47,29 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 \colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
 
 # Giriş
-Bu taslak size proje ödevinizi yazarken yardımcı olması amacıyla oluşturulmuştur. Ödevlerinizde, makalelerinizde, sunumlarınızda ve projelerinizde kullandığınız tüm bilgi kaynaklarına atıfta bulunmalısınız. Alıntı ve gönderme yapmak okuyuculara çalışmanızda kullandığınız/başvurduğunuz  kaynaklara ulaşma imkanı sağlar. **Her ne kadar kendi sözlerinizi kullanıyor olsanız da, başkalarına ait fikirleri çalışmanızda aktarıyorsanız bu fikirlerin kaynağını belgelemek zorundasınız. Aksi takdirde akademik intihal yapmış olursunuz.** Yazım konusunda @aydinonat:2007'ye başvurabilirsiniz. 
+E-ticaret günümüzde birçok alanda kullanılmaktadır. İnsanlar evlerinde internet üzerinden gıda ve temel ihtiyaçlar başta olmak üzere sipariş verebilmekte ve ticaret örneği sadece bu olmayıp birçok alana yayılmaktadır. Giyimden teknolojiye akla gelebilecek bütün gereksinimlere internet aracılığı ile sipariş vererek ulaşmak hayatımızın içine yerleşmiştir. İnternette bulunan geniş ürün yelpazesi insanların işlerini birçok alanda zaman tasarrufu sağlayarak halletmelerini kolaylaştırmıştır. E-ticaret alanında hizmet veren işletmelerin sayısı, insanların internet kullanma alışkanlığı ile doğru orantılı olarak her geçen gün artmaktadır. "Türkiye’de hizmet veren konaklama ve yiyecek-içecek sektörü, toptan ve perakende satış yapan sektörleri", @sakar2019real'ın çalışmasındaki 12330 gözlemli veri setinin içinden eleme usulü ile sadeleştirme yaparak “çevrimiçi alışveriş yapanların satın alma niyetinin gerçek zamanlı tahmini” ve "e-ticaret sisteminin ne kadar güvenli olduğu" konularını Literatür, Veri ve Yöntem ve Veri Analizi başlıkları altında ele alacağız. 
 
 
 Proje ödevinizde yer alan başlıkların bu metinde yer alan başlıkları kesinlikle içermesi gerekmektedir. Burada kullanılan başlıklar haricinde farklı alt başlıklar da kullanabilirsiniz. Projenizi yazarken bu dosyayı taslak olarak kullanıp içeriğini projenize uyarlayınız.
 
 ## Çalışmanın Amacı
-Bu bölümde yaptığınız çalışmanın amacından ve öneminden birkaç paragraf ile bahsediniz.
+E-ticaret aracılığıyla mal ve hizmet siparişi alan sektörler ve işletmelerin mal ve hizmet satın alan sektörler ve müşteriler ile arasında ne gibi bir ilişki bulunduğu, ilişki sürecinde aracı rolü üstlenen çevrimiçi sistemlerin güvenlik seviyeleri ve zafiyetleri, ilişkiyi belirli sistem altyapılarıyla kaydedip satın alma sürecinde satın alma amacı, zamanlaması, ödeme yöntemi, tercih sırası, beğenileri ve sıklığı gibi verilerle saptanması ve incelenmesini amaçladığımız bir istatistiksel analiz olacaktır.
 
 ## Literatür 
 
-Bu bölümde konu ile ilgili olarak okuduğunuz makaleleri referans vererek tartışınız. **Her makaleyi ayrı başlık altında tek tek özetlemeyiniz.** Literatür taramasında **en az altı** makaleye atıf yapılması ve bu makalelerden **en az ikisinin İngilizce** olması gerekmektedir.
+Tanımı gereği bakacak olursak; e-ticaret, klasik ticarete göre çeşitli avantajları barındırmaktadır. İnternet üzerinden gerçekleştiği için girişimcilerin riskleri standart bir girişimciye nazaran daha azdır. İş yeri kirası ve işyerinde çalışan işçiye ödeyeceği maaş, sigorta gibi giderlerinden tasarruf etmektedir. İnternet kullanımı teknolojinin gelişmesi ve genç nüfusun yetişmesine bağlı olarak artmakta, bununla birlikte e-ticaret firmalarının kitlelere ulaşmasında kolaylık sağlanmaktadır. Bu durum rekabetçi bir piyasa oluşumunu da beraberinde getirmektedir [@ozel2013ticaret]. E-ticaret sektöründe artan girişimciler sebebiyle oluşacak pazarın büyümesi ve arz artışlarından dolayı girişimcilerin birbirleriyle olan rekabeti de artacaktır. Bu süreçte mal ve hizmetlerinin piyasada tutunabilmesi için kendilerini sürekli eğitimlerle yenilemeleri gerekecek, piyasaya kaliteli ürünler sunmak zorunda kalacaklardır. Özetle iyi bir esnaf olma tutumunu bu sanal ortama taşımaları gerekecektir. Müşterileri ile iletişimlerini güçlendirerek işlem maliyetlerini azaltabilirler. Nitekim elektronik girişimciliğin klasik ticarete göre; müşteri ürün tercihi, sadık müşteri tespiti, düşük stok maliyeti veya hiç stoksuz çalışma ve ödemenin peşin alınması gibi tartışılmaz üstünlükleri bulunmaktadır [@ozerouglu2018giricsimcilik]. Günümüzde internet ve bilgisayarların kullanımının artmasıyla gelişen e-ticaret sektörünün birçok avantajı yanında dezavantajları da yok değildir. Bilinçli-bilinçsiz teknoloji kullanımı ile eriştiğimiz internet sitelerinde farkında olmadan güvenlik açığı veriyoruz. Oluşan haberlerle insanların bu dünyaya olan önyargıları da artabiliyor. Örneğin internet ödemelerinde kredi kartı bilgilerinin ele geçirilebileceği endişeleri bizim bu sektöre girişimizi erteletebilir. Bu konuyla ilgili yayınlanan @wen2008research araştırmasından bir alıntı yapacak olursak; Çinli araştırmacı yazarlar bu konudaki düşüncelerini şöyle dile getirmişlerdir: ”E-ticaret anlaşmasının ana sorunu güvenlik problemidir, çoğunlukla sistemin güvenliği ve bilgi güvenliği ile ilgili iki görüş vardır. Sistemdeki güvenlik problemlerinin olan sistem internet ortamında ele geçirilmesi, sistemin zarar görmesi, sistemin virüsler tarafından ele geçirilmesi sistemi kesmekte, servisi geciktirmekte ve sistemi etkili bir şekilde yıkmaktadır. Çoğu zaman bilgisayara gizlice giren kişilere engel olmak zordur; bilgi güvenliği problemleri, gizlice dinlenilme, dosyaların sıkıştırılması, bilgi kaybı, yanlış ve sahte bilgiler en yaygın bilgi hırsızlığıdır.” [@gulencc2008lojistik]. Çevrimiçi alışveriş siteleri, müşterilerine en iyi hizmeti sunma amacıyla sistemi fiili olarak bir satış danışmanına çevirecek olan -müşteri telefon, e-posta vb.- bilgilerini alıp, müşteriler web sitesinde gezinirken takibini sağlayarak hangi müşteriye ne içerik sunulacağını, kaybedilme potansiyeli yüksek olan müşteriyi kaçırmama amaçlı teklif sunmayı, satın alma niyeti olan müşteri sayısını çevrimiçi sitede maksimum sayıda tutmayı ve satış için en iyi teklifleri müşterinin ihtiyacına göre belirlemeyi amaçlayan altyapılar geliştirmişlerdir [@sakar2019real].
 
 # Veri 
-Bu bölümde çalışmanızda kullandığınız veri setinin kaynağını, ham veri üzerinde herhangi bir işlem yaptıysanız bu işlemleri ve veri seti ile ilgili özet istatistikleri tartışınız. Bu bölümde tüm değişkenlere ait özet istatistikleri (ortalama, standart sapma, minimum, maksimum, vb. değerleri) içeren bir tablo (Tablo \ref{tab:ozet}) olması zorunludur. Tablolarınıza gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız. [@perkins:1991]
+Verisetimizdeki veriler Türkiye’de hizmet veren konaklama ve yiyecek-içecek sektörü, toptan ve perakende satış yapan sektörleri", @sakar2019real'ın çalışmasındaki 12330 gözlemli veri setinin içinden eleme usulü ile sadeleştirme yapılmış olarak “çevrimiçi alışveriş yapanların satın alma niyetinin gerçek zamanlı tahmini” ve "e-ticaret sisteminin ne kadar güvenli olduğu" konularının analizini içermektedir. Verisetimiz sayfaların URL bilgilerinden kullanıcı her bir işlem yaptığında günceyerek o oturumda ziyaret ettiği sayfalardaki farklı kategorilerin sayısını ve her birinde geçirilen toplam süreyi, sayfadan siteye giren ve ardından hemen çıkan ziyaretçi yüzdesini, oturumdaki son sayfa görüntüleme yüzdesini, bir kullanıcının bir e-ticaret işlemini tamamlamadan önce ziyaret ettiği bir web sayfasının ortalama değerini, oturumların işlemle sonuçlanma olasılığının belirli bir özel güne (örn. Anneler Günü, Sevgililer Günü) yakınlığını, işletim sistemi, tarayıcı, bölge, trafik türü, geri dönen veya yeni ziyaretçi olarak ziyaretçi türü, ziyaret tarihinin hafta sonu olup olmadığını ve oturumun alışverişle sonuçlanıp sonuçlanmadığını içerir.
+
+Bu bölümde tüm değişkenlere ait özet istatistikleri (ortalama, standart sapma, minimum, maksimum, vb. değerleri) içeren bir tablo (Tablo \ref{tab:ozet}) olması zorunludur. Tablolarınıza gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız. [@perkins:1991]
 
 Analize ait R kodları bu bölümde başlamalıdır. Bu bölümde veri setini R'a aktaran ve özet istatistikleri üreten kodlar yer almalıdır.
 
 ```{r}
 library(tidyverse)
 library(here)
-survey <- read_csv(here("../data/survey.csv"))
+survey <- read_csv(here("data/online_shoppers_intention.csv"))
 ```
 
 Rmd dosyasında kod bloklarının bazılarında kod seçeneklerinin düzenlendiğine dikkat edin. 
