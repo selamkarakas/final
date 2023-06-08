@@ -69,7 +69,7 @@ Analize ait R kodları bu bölümde başlamalıdır. Bu bölümde veri setini R'
 ```{r}
 library(tidyverse)
 library(here)
-survey <- read_csv(here("data/online_shoppers_intention.csv"))
+survey <- read_csv(here("data/onlineshoppersintention.csv"))
 ```
 
 Rmd dosyasında kod bloklarının bazılarında kod seçeneklerinin düzenlendiğine dikkat edin. 
