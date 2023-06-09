@@ -25,7 +25,11 @@ urlcolor: blue
 fontsize: 12pt
 biblio-style: apalike
 abstract: |
-  Bu bölümde çalışmanızın özetini yazınız.
+  Bu çalışma, e-ticaret aracılığıyla mal ve hizmet siparişi alan sektörlerin müşterileri ile olan ilişkisini ve çevrimiçi sistemlerin güvenlik seviyelerini incelemeyi amaçlamaktadır. İnternet üzerinden gerçekleşen e-ticaret, geleneksel ticarete göre birçok avantaj sunmaktadır. E-ticaret sektörü, internet kullanımının artmasıyla birlikte hızla büyümekte ve rekabetçi bir piyasa oluşmaktadır. Ancak, e-ticaretin dezavantajları da vardır, özellikle güvenlik konusu önem taşımaktadır. 
+  Bu çalışmada, @sakar2019real tarafından sağlanan bir veri seti kullanılmaktadır. Veri setinde, çevrimiçi alışveriş yapanların satın alma niyetinin gerçek zamanlı tahmini ve e-ticaret sisteminin güvenlik düzeyi analiz edilmektedir. Veri seti, kullanıcıların oturumlarındaki sayfa ziyaretleri, süreleri, çıkma oranları, satın alma işlemleri ve diğer özellikleri içermektedir.
+  Çalışmanın sonuçlarına göre, online alışveriş sitelerinde çoğunlukla farklı sitelerle kıyaslama yapılmakta ve satın alma işlemleri farklı sitelerden gerçekleşmektedir. Satın alma oranı %11 seviyesindedir ve bu alışverişlerin %8i özel günlerde gerçekleşmektedir. Hafta sonu alışverişlerinin oranı %15'tir. Aylara göre yapılan analizlerde yaz aylarında online alışverişlerin yoğunlaştığı görülmektedir.
+  Çalışmanın yöntemi, veri setindeki bilgilerin kullanılarak histogram, saçılım ve dağılım matrisi grafikleri ile analizler yapmaktır. Bu analizler, online alışveriş üzerine daha derinlemesine anlayış sağlamaktadır.
+  Bu çalışma, e-ticaret sektöründe faaliyet gösteren işletmelerin müşteri ilişkilerini ve çevrimiçi sistemlerin güvenlik seviyelerini anlamak için önemli bir adımdır. Sonuçlar, işletmelerin müşterileriyle olan etkileşimlerini iyileştirmeleri ve güvenlik önlemlerini artırmaları konusunda bilgi sağlamaktadır.
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
@@ -36,15 +40,6 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 [^1]: 17080217, [Github Repo](https://github.com/selamkarakas/final)
 
-# Final Hakkında Önemli Bilgiler
-
-\colorbox{BurntOrange}{GITHUB REPO BAĞLANTINIZI BU DOSYANIN 37. SATIRINA YAZINIZ!}
-
-**Proje gönderimi, Github repo linki ile birlikte ekampus sistemine bir zip dosyası yüklenerek yapılacaktır. Sisteme zip dosyası yüklemezseniz ve Github repo linki vermezseniz ara sınav ve final sınavlarına girmemiş sayılırsınız.**
-
-**Proje klasörünüzü sıkıştırdıktan sonra (`OgrenciNumarasi.zip` dosyası) 9 Haziran 2023 23:59'a kadar *ekampus.ankara.edu.tr* adresine yüklemeniz gerekmektedir.**
-
-\colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
 
 # Giriş
 E-ticaret günümüzde birçok alanda kullanılmaktadır. İnsanlar evlerinde internet üzerinden gıda ve temel ihtiyaçlar başta olmak üzere sipariş verebilmekte ve ticaret örneği sadece bu olmayıp birçok alana yayılmaktadır. Giyimden teknolojiye akla gelebilecek bütün gereksinimlere internet aracılığı ile sipariş vererek ulaşmak hayatımızın içine yerleşmiştir. İnternette bulunan geniş ürün yelpazesi insanların işlerini birçok alanda zaman tasarrufu sağlayarak halletmelerini kolaylaştırmıştır. E-ticaret alanında hizmet veren işletmelerin sayısı, insanların internet kullanma alışkanlığı ile doğru orantılı olarak her geçen gün artmaktadır. "Türkiye’de hizmet veren konaklama ve yiyecek-içecek sektörü, toptan ve perakende satış yapan sektörleri", @sakar2019real'ın çalışmasındaki 12330 gözlemli veri setinin içinden eleme usulü ile sadeleştirme yaparak “çevrimiçi alışveriş yapanların satın alma niyetinin gerçek zamanlı tahmini” ve "e-ticaret sisteminin ne kadar güvenli olduğu" konularını Literatür, Veri ve Yöntem ve Veri Analizi başlıkları altında ele alacağız. 
@@ -60,19 +55,18 @@ E-ticaret aracılığıyla mal ve hizmet siparişi alan sektörler ve işletmele
 Tanımı gereği bakacak olursak; e-ticaret, klasik ticarete göre çeşitli avantajları barındırmaktadır. İnternet üzerinden gerçekleştiği için girişimcilerin riskleri standart bir girişimciye nazaran daha azdır. İş yeri kirası ve işyerinde çalışan işçiye ödeyeceği maaş, sigorta gibi giderlerinden tasarruf etmektedir. İnternet kullanımı teknolojinin gelişmesi ve genç nüfusun yetişmesine bağlı olarak artmakta, bununla birlikte e-ticaret firmalarının kitlelere ulaşmasında kolaylık sağlanmaktadır. Bu durum rekabetçi bir piyasa oluşumunu da beraberinde getirmektedir [@ozel2013ticaret]. E-ticaret sektöründe artan girişimciler sebebiyle oluşacak pazarın büyümesi ve arz artışlarından dolayı girişimcilerin birbirleriyle olan rekabeti de artacaktır. Bu süreçte mal ve hizmetlerinin piyasada tutunabilmesi için kendilerini sürekli eğitimlerle yenilemeleri gerekecek, piyasaya kaliteli ürünler sunmak zorunda kalacaklardır. Özetle iyi bir esnaf olma tutumunu bu sanal ortama taşımaları gerekecektir. Müşterileri ile iletişimlerini güçlendirerek işlem maliyetlerini azaltabilirler. Nitekim elektronik girişimciliğin klasik ticarete göre; müşteri ürün tercihi, sadık müşteri tespiti, düşük stok maliyeti veya hiç stoksuz çalışma ve ödemenin peşin alınması gibi tartışılmaz üstünlükleri bulunmaktadır [@ozerouglu2018giricsimcilik]. Günümüzde internet ve bilgisayarların kullanımının artmasıyla gelişen e-ticaret sektörünün birçok avantajı yanında dezavantajları da yok değildir. Bilinçli-bilinçsiz teknoloji kullanımı ile eriştiğimiz internet sitelerinde farkında olmadan güvenlik açığı veriyoruz. Oluşan haberlerle insanların bu dünyaya olan önyargıları da artabiliyor. Örneğin internet ödemelerinde kredi kartı bilgilerinin ele geçirilebileceği endişeleri bizim bu sektöre girişimizi erteletebilir. Bu konuyla ilgili yayınlanan @wen2008research araştırmasından bir alıntı yapacak olursak; Çinli araştırmacı yazarlar bu konudaki düşüncelerini şöyle dile getirmişlerdir: ”E-ticaret anlaşmasının ana sorunu güvenlik problemidir, çoğunlukla sistemin güvenliği ve bilgi güvenliği ile ilgili iki görüş vardır. Sistemdeki güvenlik problemlerinin olan sistem internet ortamında ele geçirilmesi, sistemin zarar görmesi, sistemin virüsler tarafından ele geçirilmesi sistemi kesmekte, servisi geciktirmekte ve sistemi etkili bir şekilde yıkmaktadır. Çoğu zaman bilgisayara gizlice giren kişilere engel olmak zordur; bilgi güvenliği problemleri, gizlice dinlenilme, dosyaların sıkıştırılması, bilgi kaybı, yanlış ve sahte bilgiler en yaygın bilgi hırsızlığıdır.” [@gulencc2008lojistik]. Çevrimiçi alışveriş siteleri, müşterilerine en iyi hizmeti sunma amacıyla sistemi fiili olarak bir satış danışmanına çevirecek olan -müşteri telefon, e-posta vb.- bilgilerini alıp, müşteriler web sitesinde gezinirken takibini sağlayarak hangi müşteriye ne içerik sunulacağını, kaybedilme potansiyeli yüksek olan müşteriyi kaçırmama amaçlı teklif sunmayı, satın alma niyeti olan müşteri sayısını çevrimiçi sitede maksimum sayıda tutmayı ve satış için en iyi teklifleri müşterinin ihtiyacına göre belirlemeyi amaçlayan altyapılar geliştirmişlerdir [@sakar2019real].
 
 # Veri 
-Verisetimizdeki veriler Türkiye’de hizmet veren konaklama ve yiyecek-içecek sektörü, toptan ve perakende satış yapan sektörleri", @sakar2019real'ın çalışmasındaki 12330 gözlemli veri setinin içinden eleme usulü ile sadeleştirme yapılmış olarak “çevrimiçi alışveriş yapanların satın alma niyetinin gerçek zamanlı tahmini” ve "e-ticaret sisteminin ne kadar güvenli olduğu" konularının analizini içermektedir. Verisetimiz sayfaların URL bilgilerinden kullanıcı her bir işlem yaptığında günceyerek o oturumda ziyaret ettiği sayfalardaki farklı kategorilerin sayısını ve her birinde geçirilen toplam süreyi, sayfadan siteye giren ve ardından hemen çıkan ziyaretçi yüzdesini, oturumdaki son sayfa görüntüleme yüzdesini, bir kullanıcının bir e-ticaret işlemini tamamlamadan önce ziyaret ettiği bir web sayfasının ortalama değerini, oturumların işlemle sonuçlanma olasılığının belirli bir özel güne (örn. Anneler Günü, Sevgililer Günü) yakınlığını, işletim sistemi, tarayıcı, bölge, trafik türü, geri dönen veya yeni ziyaretçi olarak ziyaretçi türü, ziyaret tarihinin hafta sonu olup olmadığını ve oturumun alışverişle sonuçlanıp sonuçlanmadığını içerir.
+Verisetimizdeki veriler Türkiye’de hizmet veren konaklama ve yiyecek-içecek sektörü, toptan ve perakende satış yapan sektörleri", @sakar2019real'ın çalışmasındaki 12330 gözlemli veri setinin içinden eleme usulü ile sadeleştirme yapılmış olarak “çevrimiçi alışveriş yapanların satın alma niyetinin gerçek zamanlı tahmini” ve "e-ticaret sisteminin ne kadar güvenli olduğu" konularının analizini içermektedir. Verisetimiz sayfaların URL bilgilerinden kullanıcı her bir işlem yaptığında güncellenerek o oturumda ziyaret ettiği sayfalardaki farklı kategorilerin sayısını ve her birinde geçirilen toplam süreyi, sayfadan siteye giren ve ardından hemen çıkan ziyaretçi yüzdesini, oturumdaki son sayfa görüntüleme yüzdesini, bir kullanıcının bir e-ticaret işlemini tamamlamadan önce ziyaret ettiği bir web sayfasının ortalama değerini, oturumların işlemle sonuçlanma olasılığının belirli bir özel güne (örn. Anneler Günü, Sevgililer Günü) yakınlığını, işletim sistemi, tarayıcı, bölge, trafik türü, geri dönen veya yeni ziyaretçi olarak ziyaretçi türü, ziyaret tarihinin hafta sonu olup olmadığını ve oturumun alışverişle sonuçlanıp sonuçlanmadığını içerir.
 
-Bu bölümde tüm değişkenlere ait özet istatistikleri (ortalama, standart sapma, minimum, maksimum, vb. değerleri) içeren bir tablo (Tablo \ref{tab:ozet}) olması zorunludur. Tablolarınıza gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız. [@perkins:1991]
+Verisetimize ait özet tablodan (Tablo \ref{tab:ozet}) yola çıkarak bazı yorumları yapabilmekteyiz. Örneğin; Bounce Rate ve Exit Rate verisi ile online alışveriş sitelerine giriş sonrası anında çıkış oranı oldukça düşük, satın almanın ise ziyaret edilen son siteden olma oranı ortalama %4 seviyelerindedir  yani satın alma işlemlerinde çoğunlukla farklı sitelerle kıyaslamalar yapılmakta, sipariş ilk girilen siteden verilmemektedir. Revenue (0: satın almayla sonuçlanmama, 1: satın almayla sonuçlanma) verisi yapılan oturum ziyaretlerinin %11 gibi bir seviyesinin alışveriş ile sonuçlandığını göstermektedir. Special Day verisi  bunların %8'inin özel günler için gerçekleştiğini öngörürken Weekend (0: hayır, 1: evet) verisi fiziki alışverişin aksine bir oranla yalnızca %15'inin haftasonu gerçekleştiğini göstermektedir. Month (ay sıra numaraları) verisi online alışverişlerin yaz aylarında yoğunlaştığını gösterir. Son olarak Visitor Type (0: yeni ziyaretçi, 1: geri dönen ziyaretçi) oranı bize sonuçlanan alışverişin Exit Rate oranını destekler nitelikte müşterilerin alışveriş işlemininin ilk ziyaretlerinde gerçekleşmediğini göstermektedir.
 
-Analize ait R kodları bu bölümde başlamalıdır. Bu bölümde veri setini R'a aktaran ve özet istatistikleri üreten kodlar yer almalıdır.
 
-```{r}
+```{r echo=FALSE}
 library(tidyverse)
 library(here)
-survey <- read_csv(here("data/onlineshoppersintention.csv"))
+survey <- read_csv(here("data/osiduzenleme.csv"))
 ```
 
-Rmd dosyasında kod bloklarının bazılarında kod seçeneklerinin düzenlendiğine dikkat edin. 
+ 
 
 ```{r, echo=FALSE}
 library(xtable) 
@@ -81,11 +75,11 @@ library(summarytools)
 st_options(lang = "tr")
 ```
 
-`echo=FALSE` seçeneği ile kodların türetilen pdf dosyasında görünmesini engelleyin ve sonuçlarınızı tablo halinde rapor edin.
+
 
 ```{r results='asis', echo=FALSE}
 survey %>%
-  select("sex", "credits", "handedness", "height", "handspan") %>% 
+  select("Administrative", "Informational", "ProductRelated", "BounceRates", "ExitRates", "SpecialDay", "Month", "OperatingSystems", "Browser", "Region", "TrafficType", "VisitorType", "Weekend", "Revenue") %>% 
   descr(stats = c("mean", "sd", "min", "med", "max"), transpose = TRUE) %>% 
   xtable(caption = "Özet İstatistikler",
          label = "tab:ozet",
@@ -94,34 +88,79 @@ survey %>%
 ```
 
 
+
+
+
+
+
+
+
+
 # Yöntem ve Veri Analizi
-Bu bölümde veri setindeki bilgileri kullanarak çalışmanın amacına ulaşmak için kullanılacak yöntemleri açıklayın. Derste işlenen/işlenecek olan analiz yöntemlerinden (Hipotez testleri ve korelasyon analizi gibi) çalışmanın amacına ve veri setine uygun olanlar bu bölümde kullanılmalıdır. [@newbold:2003; @ozsoy:2010; @ozsoy:2014]
+Bu bölümde veri setindeki bilgiler ışığında Histogram, Saçılım ve Dağılım Matrisi grafiklerini kullanarak online alışveriş üzerine anlizler yapacağız.
 
-Örneğin, regresyon analizi gerçekleştiriyorsanız tahmin ettiğiniz denklemi bu bölümde tartışınız. Denklemlerinizi ve matematiksel ifadeleri $LaTeX$ kullanarak yazınız.
+İlk olarak saçılım grafiğimiz olan (Şekil \@ref(fig:plot) )'de Anneler Günü ve Sevgililer Günü tarihlerine yakın günlerde yani özellikle Mayıs ayı olmak üzere Şubat ayında da örneklemimizdeki insan grubunun online alışveriş yapma oranının normal zamanlara oranla yükseldiğini görmekteyiz. Örneklem grubumuz alışverişi özel günlerle ilgisi olmayan alışverişleri de  barındırıyor olsa da bu tarihlerde yapılan alışveriş yoğunluğu özel günler ile alışveriş verilerinin pozitif ilişkisini bize yüksek oranda göstermektedir. 
 
-$$
-Y_t = \beta_0 + \beta_N N_t + \beta_P P_t + \beta_I I_t + \varepsilon_t
-$$
-
-Bu bölümde analize ilişkin farklı tablolar ve grafiklere yer verilmelidir. Çalışmanıza uygun biçimde histogram, nokta grafiği (Şekil \@ref(fig:plot) gibi), kutu grafiği, vb. grafikleri bu bölüme ekleyiniz. Şekillerinize de gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız.
-
-
-```{r plot, fig.align='center', fig.cap='Muhteşem Bir Grafik'}
+```{r plot, fig.align='center', fig.cap='Alışverişlerin Özel Günler ile ilgili olup olmadığının incelendiği grafik. ', echo=FALSE}
 survey %>% 
-  ggplot(aes(x = handedness, y = handspan)) +
-  geom_point() +
+  ggplot(aes(x = Month, y = SpecialDay)) +
+  geom_point(na.rm = TRUE, colour = "green", shape = 15, size = 2 ) +
   geom_smooth() +
-  scale_x_continuous("Handedness") + 
-  scale_y_continuous("Handspan")
+  scale_x_continuous("Month") + 
+  scale_y_continuous("SpecialDay")
+```
+
+Aylara göre yapılan işlem adedini içeren histogram grafiğimiz (Şekil \@ref(fig:histogram))'de ise yaz ve kış dönemi öncesi mevsim geçişlerinde (yaz dönemi Mayıs ayı Anneler gününü barındırıyor olsa da) yüksek online alışveriş adetleri gözlenmiş olup ara dönemlerde düşük adetler gözlemlenmektedir. 
+
+```{r histogram, fig.align='center', fig.cap='Aylara göre satın alma ile tamamkanan online alışveriş sayılarının histogram dağılımını içeren grafik', echo=FALSE}
+ggplot(survey) +
+  aes(x = Month) +
+  geom_histogram(binwidth = 0.8) +
+  scale_x_continuous(name = "Ay") +
+  scale_y_continuous(name = "Adet") +
+  ggtitle("")
+  
+```
+
+Son olarak gerçekleştirilen oturumlarda online alışveriş sitelerinin Bilgilendirme ve Ürünle Alaka'lı bölümlerinde geçirilen süreyle birlikte Toplam Geçirilen Süre üçlü bir dağılım matrisi grafiği ile gözlemlenmiştir. Ürünle alaklı bölüm ile Bilgilendirme bölümünde geçirilen vakit pozitif ve yüksek korelasyon oranına sahiptir yani bu iki bölüm doğrusal ve yakın bir dağılım göstermektedir. Toplam geçirilen süre ise diğer iki veriyle yüksek oranda olmasa da pozitif bir korelasyon içindedir. Ayrı ayrı inceleyecek olursak sitelerin Ürünle alakalı olan kısmında geçirilen sürenin diğer bölümlere oranla yüksek oluşu (Tablo \ref{tab:ozet})'i yorumlarken de bahsettiğimiz müşterilerin ilk girdikleri siteden ve ilk kez müşteri olmadan diğer siteler ve alışveriş türlerini de inceleyerek alışveriş tercihlerini kullandığını görmekteyiz.
+
+```{r, fig.align='center', fig.cap='Sitelerde Bilgilendirme kısmında, Ürünle Alakalı kısmında ve Toplam Geçirilen Süre Dağılım Matrisi',  pairs2, warning=FALSE, error=FALSE, echo=FALSE}
+survey %>%
+  select(Administrative, ProductRelated, Informational) %>%
+  GGally::ggpairs()
+
 ```
 
 
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Sonuç
-Bu bölümde çalışmanızın sonuçlarını özetleyiniz. Sonuçlarınızın başlangıçta belirlediğiniz araştırma sorusuna ne derece cevap verdiğini ve ileride bu çalışmanın nasıl geliştirilebileceğini tartışınız.
+Bu çalışma, e-ticaret sektöründeki müşteri ilişkileri ve çevrimiçi sistemlerin güvenlik seviyeleri üzerine bir analiz sunmaktadır. Çalışmanın sonuçları, çeşitli online alışveriş sitelerinde müşteri davranışlarının incelenmesi ve e-ticaret güvenliğinin değerlendirilmesi yoluyla elde edilmiştir.
 
-**Kaynakça bölümü Rmarkdown tarafından otomatik olarak oluşturulmaktadır. Taslak dosyada Kaynakça kısmında herhangi bir değişikliğe gerek yoktur.** 
+Sonuçlara göre, müşteriler genellikle farklı siteler arasında karşılaştırma yapmakta ve satın alma işlemlerini farklı platformlar üzerinden gerçekleştirmektedir. Özellikle özel günlerde ve hafta sonlarında online alışverişlerde artış gözlenmektedir. Ayrıca, yaz aylarında online alışverişlerin yoğunlaştığı tespit edilmiştir.
 
-**_Taslakta bu cümleden sonra yer alan hiçbir şey silinmemelidir._**
+Bu çalışmanın sonuçları, e-ticaret işletmelerine müşteri davranışlarına dair önemli bir perspektif sunmaktadır. Müşterilerin alışveriş tercihlerini ve satın alma alışkanlıklarını anlamak, işletmelerin hedef kitlelerine daha iyi hizmet sunmalarına yardımcı olabilir. Ayrıca, güvenlik önlemlerinin güçlendirilmesi, müşterilerin güvenini kazanmak ve çevrimiçi alışveriş deneyimini daha güvenli hale getirmek için önemli bir adımdır.
+
+Gelecekteki araştırmalar, e-ticaret sektöründe müşteri davranışlarını daha kapsamlı bir şekilde incelemek ve güvenlik önlemlerini daha da geliştirmek üzerine odaklanabilir. Ayrıca, farklı demografik faktörlerin (yaş, cinsiyet, gelir düzeyi vb.) müşteri davranışları üzerindeki etkileri daha ayrıntılı olarak değerlendirilebilir.
+
+Sonuç olarak, bu çalışma e-ticaret sektöründe faaliyet gösteren işletmelere müşteri ilişkilerini güçlendirmek ve çevrimiçi sistemlerin güvenlik seviyelerini artırmak için önemli bir yol göstermektedir. Müşteri memnuniyetini artırmak ve güvenli bir alışveriş ortamı sağlamak, başarılı bir e-ticaret işletmesi için temel unsurlardır.
+
+Yapılan araştırmayı sektörlere ayrı ayrı indirgeyerek hem bu alanda hizmet veren kişi ve işletmelerin stratejilerine daha spesifik yöntemler geliştirebilir hem de bir ülke ekonomisini canlandıracak makro ekonomik stratejilere önayak olabiliriz.
 
 \newpage
 # Kaynakça {#references}
